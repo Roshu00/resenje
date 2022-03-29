@@ -203,3 +203,34 @@ li:not(:last-child):after {
     fill: hsl(204, 81%, 39%);
   }
 }
+
+.container {
+  width: 100%;
+  background-image: url(./assets/dots.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider {
+  display: flex;
+  width: 300%;
+}
+
+.slider section {
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+  justify-content: center;
+  padding: 100px 120px;
+  gap: 10px;
+}
+
+.slider section h1 {
+  font-size: 48px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.slider section img {
+  width: 200px;
+}
