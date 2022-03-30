@@ -293,6 +293,36 @@
           </section>
         </div>
       </div>
+      <form class="slider-controls">
+        <input
+          type="radio"
+          value="0"
+          name="slide"
+          checked
+          onchange="handleRadioChange(value)"
+        />
+        <input
+          type="radio"
+          value="1"
+          name="slide"
+          onchange="handleRadioChange(value)"
+        />
+        <input
+          type="radio"
+          value="2"
+          name="slide"
+          onchange="handleRadioChange(value)"
+        />
+      </form>
+    </div>
+    <div class="small-slider-controler">
+      <div class="left arrow"><p>&#65308;</p></div>
+      <div class="text-slider">
+        <div class="section-text">Lorem ipsum dolor sit</div>
+        <div class="section-text">Lorem ipsum dolor sit 2</div>
+        <div class="section-text">Lorem ipsum dolor sit 3</div>
+      </div>
+      <div class="right arrow"><p>&#65310;</p></div>
     </div>
     <script src="./app.js"></script>
   </body>
