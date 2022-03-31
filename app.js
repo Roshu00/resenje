@@ -6,6 +6,7 @@ const slider = document.querySelector(".slider");
 const textSlider = document.querySelector(".text-slider");
 const leftArrow = document.querySelector(".left");
 const rightArrow = document.querySelector(".right");
+const footerArrow = document.querySelector("#footer-arrow");
 
 const handleSearchOpen = () => {
   searchContainer.classList.toggle("open");
@@ -42,8 +43,14 @@ leftArrow.addEventListener("click", () => {
 });
 
 const handleRadioChange = (value) => {
-  sectionIndex = value;
+  sectionIndex = valueOf(value);
   slider.style.transform = "translate(" + sectionIndex * "-33.333333" + "%)";
   textSlider.style.transform =
     "translate(" + sectionIndex * "-33.333333" + "%)";
 };
+
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};
+
+footerArrow.addEventListener("click", scrollToTop);

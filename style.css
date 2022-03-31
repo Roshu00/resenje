@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: hsl(var(--background-color));
   font-family: "Roboto", sans-serif;
@@ -365,7 +369,7 @@ section .title {
   background-color: rgba(163, 162, 162, 0.3);
 }
 
-#work svg {
+#Work svg {
   width: 60px;
 }
 
