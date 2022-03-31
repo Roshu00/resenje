@@ -133,6 +133,7 @@ nav .links li:not(:last-child):after {
 
 .search-icon:hover {
   fill: hsl(var(--primary-green-color));
+  stroke: hsl(var(--text-primary-color));
 }
 
 .search-container.open {
