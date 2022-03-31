@@ -43,7 +43,7 @@ leftArrow.addEventListener("click", () => {
 });
 
 const handleRadioChange = (value) => {
-  sectionIndex = valueOf(value);
+  sectionIndex = Number(value);
   slider.style.transform = "translate(" + sectionIndex * "-33.333333" + "%)";
   textSlider.style.transform =
     "translate(" + sectionIndex * "-33.333333" + "%)";
